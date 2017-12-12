@@ -13,8 +13,8 @@ Please make sure to send data using POST method and from the IP that you have wh
 ### How can I get the access?
 You can request an access to API by following next steps:
 
-- Register new account [here](https://icobench.com/register)
-- Request API key [here](https://icobench.com/developers)
+- Register a new account [here](https://icobench.com/register)
+- Request the API key [here](https://icobench.com/developers)
 
 ### Resources
 
