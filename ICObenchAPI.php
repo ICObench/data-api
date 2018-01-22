@@ -20,7 +20,7 @@ class ICObenchAPI {
 	}
 	
 	public function getPeople($type = 'registered', $data = ''){ 
-		return $this->send('people/' . $icoId, $data); 
+		return $this->send('people/' . $type, $data); 
 	}	
 	
 	private function send($action, $data){
