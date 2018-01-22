@@ -10,13 +10,19 @@ class ICObenchAPI {
 	public function getICOs($type = 'all', $data = ''){ 
 		return $this->send('icos/' . $type, $data); 
 	}	
+	
 	public function getICO($icoId, $data = ''){ 
 		return $this->send('ico/' . $icoId, $data); 
-	}		
+	}
+	
 	public function getOther($type){ 
 		return $this->send('other/' . $type, ''); 
 	}
-
+	
+	public function getPeople($type = 'registered', $data = ''){ 
+		return $this->send('ico/' . $icoId, $data); 
+	}	
+	
 	private function send($action, $data){
 		
 		$dataJson = json_encode($data); 				
@@ -26,6 +32,7 @@ class ICObenchAPI {
 		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST"); 
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $dataJson);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 			'Content-Type: application/json',
 			'Content-Length: ' . strlen($dataJson),
