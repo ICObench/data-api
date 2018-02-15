@@ -20,6 +20,7 @@ You can request an access to API by following next steps:
 
 - [ICObench API PHP Class](https://github.com/ICObench/data-api/blob/master/ICObenchAPI.php)
 - [ICObench API JS Example](https://github.com/ICObench/data-api/blob/master/ICObenchAPI.js)
+- [ICObench API Python Example](https://github.com/ICObench/data-api/blob/master/ICObenchAPI.py)
 - [API documentation](https://icobench.com/developers)
 
 ## Authors
